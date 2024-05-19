@@ -28,7 +28,7 @@ Steps involved in SIFT algorithm :
 `remove_logo(input_image_path, output_image_path, logo_image_path='Logo_2.PNG')`
 
 ### Results
-- We can use `remove_logo()` to remove the logo as seen
+- We can use `remove_logo()` to remove the logo as seen:
   
 <img src="https://github.com/Salma-Yassin/Remove-Logo-from-IDs/assets/109458906/eb3932c5-37ce-4cb0-bbdb-b5b6552a8ec9" width="400" style="margin-right: 100;">
 
