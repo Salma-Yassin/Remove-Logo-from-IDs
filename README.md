@@ -13,7 +13,7 @@ This project aims to remove the logo of "جمهورية مصر العربية" f
 - Applies the ratio test to filter good matches from the list of matches.
 - Finds the homography matrix using the good matches between the keypoints of the logo and scene images.
 
-The main function `remove_logo()` loads the input image and the logo image specified by the provided paths. It then converts the input image to grayscale and detects keypoints and computes descriptors using (SIFT) algorithm for both the logo and scene images. The descriptors are then matched, and a ratio test is applied to filter good matches. If a sufficient number of good matches are found, a homography matrix is calculated using RANSAC. With the homography matrix, the logo's position in the scene image is determined, and a mask is created to isolate the logo region. The logo region is inpainted and blurred to remove itfrom the scene image. Finally, the modified scene image is saved to the specified output path.
+The main function `remove_logo()` loads the input image and the logo image specified by the provided paths. It then converts the input image to grayscale and detects keypoints and computes descriptors using (SIFT) algorithm for both the logo and scene images. The descriptors are then matched, and a ratio test is applied to filter good matches. If a sufficient number of good matches are found, a homography matrix is calculated. With the homography matrix, the logo's position in the scene image is determined, and a mask is created to isolate the logo region. The logo region is inpainted and blurred to remove itfrom the scene image. Finally, the modified scene image is saved to the specified output path.
 
 Steps involved in SIFT algorithm :
 
